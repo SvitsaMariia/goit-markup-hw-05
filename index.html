@@ -22,7 +22,7 @@
             <!-- Links to other pages or sections of the current page -->
             <ul class="nav-list list">
                 <li class="nav-item"><a href="./index.html" class="item link active">Studio</a></li>
-                <li class="nav-item"><a href="./portfolio.html" class="item link">Portfolio</a></li>
+                <li class="nav-item"><a href="./portfolio.html" class="item link ">Portfolio</a></li>
                 <li class="nav-item"><a href="#" class="item link">Contacts</a></li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
             <h1 class="hero-title">Effective Solutions
             for Your Business
             </h1>
-            <button type="button" class="hero-button">Order Service</button>
+            <button type="button" class="hero-button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- Section2 -->
@@ -362,5 +362,15 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-btn" data-modal-close>
+                <svg class="modal-icon" width="8" height="8">
+                    <use href="images/sprite.svg#icon-modalclosebtn"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
 </body>
 </html>
